@@ -1,4 +1,6 @@
-// Create a new component, should produce some html
+import React from 'react';
+
+// 1) Create a new component, should produce some html
 
 // const = ES6 syntax = final value of variable, aka, constant at this point, we're never going to reassign 'App'
 
@@ -8,4 +10,5 @@ const App = function() {
   return <div>Hi!</div>;
 }
 
-// Take component's generated HTML & put on page (in DOM)
+// 2) Take component's generated HTML & put on page (in DOM)
+React.render(App);
