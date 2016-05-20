@@ -1,15 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+// Create a new component, should produce some html
 
-import App from './components/app';
-import reducers from './reducers';
+// const = ES6 syntax = final value of variable, aka, constant at this point, we're never going to reassign 'App'
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+// JSX = subset of JS, to write what looks like html
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+const App = function() {
+  return <div>Hi!</div>;
+}
+
+// Take component's generated HTML & put on page (in DOM)
