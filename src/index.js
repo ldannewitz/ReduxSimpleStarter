@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 // 1) Create a new COMPONENT, component should produce some html
 
 // const = ES6 syntax = final value of variable, aka, constant at this point, we're never going to reassign 'App'
+// no longer use 'var', use 'const' or 'let'
+const API_KEY = 'AIzaSyAKaiQaodB8LDgZ6RMgaSX8jR8-8pAgsGk';
 
 // JSX = subset of JS, to write what looks like html
 // babel translates this to vanilla JS/actual html
