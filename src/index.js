@@ -4,6 +4,8 @@ import React from 'react';
 // used to react with the DOM
 import ReactDOM from 'react-dom';
 
+import SearchBar from './components/search_bar';
+
 // 1) Create a new COMPONENT, component should produce some html
 
 // const = ES6 syntax = final value of variable, aka, constant at this point, we're never going to reassign 'App'
@@ -30,7 +32,11 @@ const API_KEY = 'AIzaSyAKaiQaodB8LDgZ6RMgaSX8jR8-8pAgsGk';
 
 // => fat arrow is the same as 'function'
 const App = () => {
-  return <div>Hi!</div>;
+  return (
+    <div>
+      <SearchBar/>
+    </div>
+  );
 }
 
 // App = class
